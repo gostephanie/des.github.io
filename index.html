@@ -26,51 +26,118 @@ a {
   color: black;
 }
 
+body {
+  margin: 40px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+  position: relative;
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+  grid-template-columns: 60px 600px 600px;
+}
+
+.wrapper {
+        display: grid;
+    grid-gap: 10px;
+        grid-template-columns: 600px 600px 600px;
+        grid-template-areas:
+    "header  header  header"
+        "sidebar content content"
+        "footer  footer  footer";
+        background-color: #fff;
+        color: #444;
+    }
+
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 50px;
+  font-size: 150%;
+}
+
+.header,
+.footer {
+  background-color: #999;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.topright {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 
 </style>
 
-</head>
 
-<body>
-  <div id="container">
-    <header>
-      <h1>
-        <img style="padding-left:40%" src="https://www.go2-me.com/wp-content/uploads/2015/12/InteractiveMedia1.png" alt="Interactice Media 1">
-      </h1>
-    </header>
 
-    <section>
-      <h2>Major project</h2>
-      <ol>
-        <li><a href="#">Project 1</a></li>
-        <li><a href="#">Project 2</a></li>
-        <li><a href="#">Project 3</a></li>
-      </ol>
-    </section>
 
-    <section>
-      <h2>Exercises</h2>
-      <ol>
-        <li><a href="./exercise1.html">Exercise 1 History of Art and Remixing</a></li>
-        <li><a href="./des117ex2/aimeemann.html">Exercise 2 HTML Sematic Mark Up Exercise</a></li>
-        <li><a href="./des117ex2/maintitle.html">Exercise 2 HTML Sematic Mark Up Exercise</a></li>
-        <li><a href="./des117ex2/spgocheese.html">Exercise 2 HTML Sematic Mark Up Exercise</a></li>
-        <li><a href="./exercise3.html">Exercise 3 CSS Colorized Selector Exercise: Llama Game</a></li>
-        <Li><a href="./des117exrcise4/boxmodel-game.html">Exercise 4 Exploring Box Model Game</a></Li>
-        <Li><a href="./exercise5.html">Exercise 5 Web Font Style Tile and Oral Report Exercise</a></Li>
-        <Li><a href="#">Exercise 6 CSS Grid One Page Layout</a></Li>
-      </ol>
-    </section>
 
-    <div>
-      <h2>Useful Links</h2>
-      <ul>
-        <li><h3>Category 1</h3>
+
+  <div class="wrapper">
+  <div class="box header">  <img style="padding-left:40%" src="https://www.go2-me.com/wp-content/uploads/2015/12/InteractiveMedia1.png" alt="Interactice Media 1"></div>
+
+  <div class="box sidebar"><section>
+    <h2>Major project</h2>
+    <ol>
+      <li><a href="#">Project 1</a></li>
+      <li><a href="#">Project 2</a></li>
+      <li><a href="#">Project 3</a></li>
+    </ol>
+  </section>
+  <section>
+    <h2>Exercises</h2>
+    <ol>
+      <li><a href="./exercise1.html">Exercise 1 History of Art and Remixing</a></li>
+      <li><a href="./des117ex2/aimeemann.html">Exercise 2 HTML Sematic Mark Up Exercise</a></li>
+      <li><a href="./des117ex2/maintitle.html">Exercise 2 HTML Sematic Mark Up Exercise</a></li>
+      <li><a href="./des117ex2/spgocheese.html">Exercise 2 HTML Sematic Mark Up Exercise</a></li>
+      <li><a href="./exercise3.html">Exercise 3 CSS Colorized Selector Exercise: Llama Game</a></li>
+      <Li><a href="./des117exrcise4/boxmodel-game.html">Exercise 4 Exploring Box Model Game</a></Li>
+      <Li><a href="./exercise5.html">Exercise 5 Web Font Style Tile and Oral Report Exercise</a></Li>
+      <Li><a href="#">Exercise 6 CSS Grid One Page Layout</a></Li>
+    </ol>
+  </section>
+
+</div>
+  <div class="box content">
+    <br />   <h2>Useful Links</h2>
+
+        <h3>Category 1</h3>
           <ul>
             <li><a href="http://wbwip.com/wbw/emailencoder.html">Encode Email Adresses</a></li>
           </ul>
-        </li>
-      </ul>
 
 
       <h3>Blog</h3>
@@ -79,16 +146,12 @@ a {
           <li><a href="#">Link</a></li>
           <li><a href="#">Link</a></li>
         </ul>
-
-
-
-    </div>
-  </div>
-  <footer>
-    <p>Stephanie Go</p>
+</div>
+  <div class="box footer">  <p>Stephanie Go</p>
     <p>Contact: <a href="&#115;&#112;&#103;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#115;&#112;&#103;&#111;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a></p>
-    <p><a href="http://validator.w3.org/check?uri=referer">Valid HTML 5</a></p>
-  </footer>
+    <p><a href="http://validator.w3.org/check?uri=referer">Valid HTML 5</a></p></div>
+</div>
+
 </body>
 
 
