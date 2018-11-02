@@ -4,13 +4,15 @@ to 90% of viewport width and margin:auto centers the page
 in the middle of the browser no matter how wide you stretch the browser*/
 .pagecontainer {
   margin: auto;
-  width: 50vw;
+  width: 100vw;
 }
 
 header {
   background: #000000;
   padding: 3rem;
   text-align: center;
+  width: 100vw;
+  height: 40vw;
 
 }
 
@@ -31,7 +33,7 @@ nav ul {
   flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
-  
+
 
 }
 /*Sets background color of nav list elements and their width and height*/
@@ -53,7 +55,6 @@ nav ul li a {
   font-family: 'Poppins', sans-serif;
   font-size: 1.3em;
   font-weight: 400;
-  font-family: 'Poppins', sans-serif;
 
 
 }
@@ -76,13 +77,15 @@ color: #4e4e32;
 
 }
 
-}
+
 article {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 5rem;
+  padding-right: 67rem;
   font-family: 'Raleway', sans-serif;
   font-size: 1.0em;
   font-weight:300;
+
+
 
 
 
@@ -93,7 +96,7 @@ footer {
   padding: 2rem;
   text-align: center;
   color:#ffffff;
-  font-family: : 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: italic;
 
 }
