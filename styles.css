@@ -44,11 +44,12 @@ nav ul li {
   background: #f5f5f0;
   height: 2rem;
   width: 36rem;
-  padding-top: 1rem;
-  border-color:#a2c3c3 ;
+  padding-top: .5rem;
+  border-color:#EAEDED ;
   border:groove;
   border-width: 1px;
   text-align: center;
+
 
 }
 /*Takes away the default underlining of links and sets color of menu font*/
@@ -83,14 +84,10 @@ color: #4e4e32;
 
 article {
   padding-left: 7rem;
-  padding-right: 115rem;
+  padding-right: 80rem;
   font-family: 'Raleway', sans-serif;
   font-size: 1.0em;
   font-weight:300;
-
-
-
-
 
 }
 
