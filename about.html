@@ -61,9 +61,81 @@ p{
   height: 100%;
 }
 
+
+.div1 {
+    width: auto;
+    height: 100%;
+    padding:100px;
+    margin-left:17%;
+    margin-right: 17%;
+    background-color: #EAEDED;
+}
+
+
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1F2429;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 45px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+
+}
+
+.sidenav a:hover{
+    color:#c3c3a2;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+span{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color:#666C70;
+
+}
+screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+
+
 </style>
 
 <body>
+  <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; OPEN</span>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <class="locationmarker"><a href="./blog.html">HOME</a>
+      <a href="./about.html">ABOUT</a>
+      <a href="./whattobuild.html">CREATE</a>
+      <a href="./ethics.html">ETHICS</a>
+    </div>
 
 <div class="div1">
 <h1>ABOUT</h1>
@@ -85,6 +157,16 @@ p{
 
 </article>
 </div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 </body>
 
 </html>
