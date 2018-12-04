@@ -1,31 +1,14 @@
 
 
 body {
-  margin: 250px;
-
-
-}
-
-.name {
-  font-size: 3em;
-  font-family: 'Libre Baskerville', serif;
-  font-weight:700;
-  text-align: left;
-  padding-top: 25px;
-
-
-}
-
-.undername{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  margin: 115px;
 
 
 
 }
-
 
 .welcome{
   background-color: blue;
   padding:50px;
+
 }
