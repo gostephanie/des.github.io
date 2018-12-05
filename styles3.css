@@ -1,14 +1,43 @@
 
 
 body {
-  margin: 115px;
+  margin: 120px;
+}
 
-
+.logo img {
+  width:87vw;
 
 }
 
 .welcome{
-  background-color: blue;
-  padding:50px;
+  background-color:#333333;
+  padding:35px;
+  width: 80%;
+  margin:auto;
+
+
+}
+
+.welcomep{
+  color: white;
+  font-size: 1.2em;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+font-weight:300;
+
+}
+
+
+
+
+/*****Responsive for Larger Screens*******/
+@media only screen and (min-width: 900px)  {
+/*sets the header image to full screen width*/
+.logo img {
+  width:33vw;
+  position: relative;
+  left:7%;
+
+}
 
 }
