@@ -6,38 +6,80 @@ body {
 
 .logo img {
   width:87vw;
+  position: relative;
+  right: 10%;
 
 }
 
-.welcome{
-  background-color:#333333;
-  padding:35px;
-  width: 80%;
-  margin:auto;
+.greenbox img{
+width: 90vw;
+display: block;
+margin-right: auto;
+margin-right: auto;
+position: relative;
+right: 36%;
+
+}
+
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+
 
 
 }
 
-.welcomep{
-  color: white;
-  font-size: 1.2em;
-text-align: center;
-font-family: 'Montserrat', sans-serif;
-font-weight:300;
-
+.topnav a {
+  font-family: 'Montserrat', sans-serif;
+  float: right;
+  color: #999999;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px 50px;
+  text-decoration: none;
+  font-size: .9em;
 }
 
+
+.topnav a:hover {
+   background-color:white;
+  color: black;
+}
 
 
 
 /*****Responsive for Larger Screens*******/
 @media only screen and (min-width: 900px)  {
 /*sets the header image to full screen width*/
-.logo img {
-  width:33vw;
+
+.topnav {
+  display: inline;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
   position: relative;
-  left:7%;
+  float: right;
+right: 12.5%;
+position: relative;
+top:-55px;
+
+
 
 }
+.logo img {
+  width:30%;
+  position: relative;
+  left:15%;
+}
+.greenbox img{
+width:70%;
+position: relative;
+left: 15%;
+
+}
+
 
 }
