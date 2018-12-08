@@ -8,8 +8,13 @@ body {
 .logo img {
   width:87vw;
   position: relative;
-  right: 10%;
+  right: 22%;
 
+}
+.me img{
+  width: 80vw;
+  position: relative;
+  right: 55.5%;
 }
 
 .greenbox img{
@@ -18,7 +23,7 @@ display: block;
 margin-right: auto;
 margin-right: auto;
 position: relative;
-right: 40.5%;
+right: 70%;
 
 }
 
@@ -57,12 +62,24 @@ right: 40.5%;
   background-color: white ;
   padding: 5%;
   grid-row-gap:10%;
+  width: 88vw;
+  height: 70vw;
+  position: relative;
+  float: none;
+  right: 73%;}
+
+.design-container {
+  display: grid;
+  grid-column-gap: 10%;
+  grid-template-columns: auto auto ;
+  background-color: white ;
+  padding: 5%;
+  grid-row-gap:10%;
   width: 88.5vw;
   height: 70vw;
   position: relative;
   float: none;
-  right: 44%;
-
+  right: 63%;
 }
 
 .grid-item {
@@ -71,6 +88,7 @@ right: 40.5%;
   padding: 20px;
   font-size: 50px;
   text-align: center;
+  width:10vw
 
 
 }
@@ -89,16 +107,17 @@ right: 40.5%;
 
 .aboutbox{
 font-family: 'Montserrat', sans-serif;
-width: 160%;
+width: 245%;
 position: relative;
-right: 30%;
+right: 70%;
 
 }
 .awardbox{
 font-family: 'Montserrat', sans-serif;
-width: 160%;
+width: 245%;
 position: relative;
-right: 30%;
+right: 70%;
+
 
 }
 
@@ -106,18 +125,29 @@ right: 30%;
 @media only screen and (min-width: 900px)  {
 /*sets the header image to full screen width*/
 
+.me img{
+  width: 25vw;
+  height: 20vw;
+  position: absolute;
+  left: 20%;
+
+
+}
+
 .aboutbox{
 font-family: 'Montserrat', sans-serif;
 width: 30vw;
-position: relative;
-left: 30%;
+position:  relative;
+left: 53%;
+top: 30%;
 
 }
 .awardbox{
   font-family: 'Montserrat', sans-serif;
   width: 30vw;
   position: relative;
-  left: 30%;
+  left: 53%;
+bottom: -60px;
 
 }
 
@@ -133,8 +163,20 @@ left: 30%;
   position: relative;
   float: none;
   left: 10%;
+}
 
-
+.design-container {
+  display: grid;
+  grid-column-gap: 10%;
+  grid-template-columns: auto auto ;
+  background-color: white ;
+  padding: 5%;
+  grid-row-gap:10%;
+  width: 60vw;
+  height: 70vw;
+  position: relative;
+  float: none;
+  left:11%;
 }
 
 .grid-item {
